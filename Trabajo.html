@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Trabajo</title>
+</head>
+
+<body>
+    <main>
+        <article>
+            <form action="" name="frmSolicitud" id="frmSolicitud" method="post">
+                <fieldset>
+                    <legend>Solicitud de Empleo</legend>
+                    <table border="3">
+                        <tr>
+                            <td rowspan="5" colspan="4">Puesto a solicitar
+                                <input type="text" name="txtPuesto" id="txtPuesto" maxlength="50"
+                                    placeholder="Puesto" />
+                            </td>
+                        <tr>
+                            <td>Fecha:
+                                <input type="date" name="txtFecha" id="txtFecha" />
+                            
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Sueldo mensual deseado:
+                                <input type="text" name="txtSueldod" id="txtSueldod" maxlength="15" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sueldo mensual aprobado:
+                                <input type="text" name="txtSueldoa" id="txtSueldoa" maxlength="15" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fecha de contratación:
+                                <input type="date" name="txtFechaC" id="txtFechaC" />
+                            </td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="6" bgcolor="gray">Datos Personales</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Apellido Paterno, Materno y Nombre(s)<br>
+                                <input type="text" name="txtApellidoPat" id="txtApellidoPat" placeholder="Paterno" />
+                                <input type="text" name="txtApellidoMat" id="txtApellidoMat" placeholder="Materno" />
+                                <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre(s)" />
+                            </td>
+                            <td colspan="4">Edad
+                                <input type="text" name="txtEdad" id="txtEdad" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">Domicilio, Colonia y Codigo Postal <br>
+                                <input type="text" name="txtDomicilio" id="txtDomicilio" placeholder="Domicilio" />
+                                <input type="text" name="txtColonia" id="txtColonia" placeholder="Colonia" />
+                                <input type="text" name="txtCP" id="txtCP" placeholder="CP" maxlength="6" />
+                            </td>
+                            <td>Telefono:<br>
+                                <input type="tel" name="telTelefono" id="telTelefono" placeholder="Telefono" />
+                            </td>
+                            <td>Sexo:<br>
+                                <input type="checkbox" name="ckbMas" id="ckbMas" />
+                                <label for="ckbMas">Masculino</label><br>
+                                <input type="checkbox" name="ckbFem" id="ckbFem" />
+                                <label for="ckbFem">Femenino</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Ciudad, Estado y Lugar de nacimientos <br>
+                                <input type="text" name="txtCiudad" id="txtCuidad" placeholder="Ciudad/Estado" />
+                                <input type="text" name="txtLugarNac" id="txtLugarNac" placeholder="LugarNac" />
+                            </td>
+                            <td colspan="2">Fecha de nacimiento:
+                                <input type="text" name="txtNac" id="txtNac" placeholder="Fecha Nacimiento" />
+                            </td>
+                            <td>Nacionalidad:
+                                <input type="text" name="txtNacio" id="txtNacio" placeholder="Fecha Nacionalidad" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">Vive con: <br>
+                                <input type="checkbox" name="ckbUno" id="ckbUno" />
+                                <label for="ckbUno">Sus padres</label>
+                                <input type="checkbox" name="ckbDos" id="ckbDos" />
+                                <label for="ckbDos">Su familia</label>
+                                <input type="checkbox" name="ckbTres" id="ckbTres" />
+                                <label for="ckbTres">Parientes</label>
+                                <input type="checkbox" name="ckbCuatro" id="ckbCuatro" />
+                                <label for="ckbTres">Solo</label>
+                            </td>
+                            <td>Estatura:
+                                <input type="text" name="txtEst" id="txtEst" placeholder="Estatura" />
+                            </td>
+                            <td>Peso:
+                                <input type="text" name="txtPeso" id="txtPeso" placeholder="Peso" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Personas que dependen de usted: <br>
+                                <input type="checkbox" name="ckbUnoU" id="ckbUnoU" />
+                                <label for="ckbUnoU">Hijos</label>
+                                <input type="checkbox" name="ckbDosD" id="ckbDosD" />
+                                <label for="ckbDosD">Cónyuge</label>
+                                <input type="checkbox" name="ckbTresT" id="ckbTresT" />
+                                <label for="ckbTresT">Padres</label>
+                                <input type="checkbox" name="ckbCuatroC" id="ckbCuatroC" />
+                                <label for="ckbCuatroC">Otros</label>
+                            </td>
+                            <td colspan="3">Estado civil: <br>
+                                <input type="checkbox" name="ckbSoltero" id="ckbSoltero" />
+                                <label for="ckbSoltero">Soltero</label>
+                                <input type="checkbox" name="ckbCasado" id="ckbCasado" />
+                                <label for="ckbCasado">Casado</label>
+                                <input type="checkbox" name="ckbOtro" id="ckbOtro" />
+                                <label for="ckbOtro">Otro</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="6">Domicilio</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Clave Unica de Registro de Población <br>
+                                <input type="txt" name="txtCurp" id="txtCurp" placeholder="CURP" />
+                            </td>
+                            <td colspan="3">Afore<br>
+                                <input type="txt" name="txtAfore" id="txtAfore" placeholder="Afore" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Reg. Fed. de Contribuyentes:<br>
+                                <input type="text" name="txtReg" id="txtReg" />
+                            </td>
+                            <td colspan="2">Número de Seguridad Social:<br>
+                                <input type="text" name="txtNSS" id="txtNSS" />
+                            </td>
+                            <td>Cartilla de Servicio Militar No.<br>
+                                <input type="text" name="txtServicioM" id="txtServicioM" />
+                            </td>
+                            <td>Pasaporte No.<br>
+                                <input type="text" name="txtPasaporte" id="txtPasaporte" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Tiene licencia de manejo:<br>
+                                <input type="checkbox" name="ckbNo" id="ckbNo" />
+                                <label for="ckbNo">No</label>
+                                <input type="checkbox" name="ckbSi" id="ckbSi" />
+                                <label for="ckbSi">Si</label>
+                            </td>
+                            <td colspan="2">Clase y número de licencia<br>
+                                <input type="text" name="txtLicencia" id="txtLicencia" />
+                            </td>
+                            <td colspan="2">Siendo extranjero que documentos le permiten trabajar en el país:
+                                <input type="text" name="txtExtranjero" id="txtExtranjero" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="6" bgcolor="gray">Estado de salud</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">¿Como considera su estado de salud actual?<br>
+                                <input type="checkbox" name="ckbBueno" id="ckbBueno" />
+                                <label for="ckbBueno">Bueno</label>
+                                <input type="checkbox" name="ckbRegular" id="ckbRegular" />
+                                <label for="ckbRegular">Regular</label>
+                                <input type="checkbox" name="ckbMalo" id="ckbMalo" />
+                                <label for="ckbMalo">Malo</label>
+                            </td>
+                            <td colspan="3">¿Padece alguna enfermedad crónica?
+                                <input type="checkbox" name="ckbNoE" id="ckbNoE" />
+                                <label for="ckbNoE">No</label>
+                                <input type="checkbox" name="ckbSiE" id="ckbSiE" />
+                                <label for="ckbSiE">Si</label> Explique:
+                                <input type="text" name="txtEnfermedad" id="txtEnfermedad" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td align="center" colspan="6" bgcolor="green">Datos familiares</td>
+                        </tr>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Vive</td>
+                            <td>Fin</td>
+                            <td colspan="2">Domicilio</td>
+                            <td>Ocupación</td>
+                        </tr>
+                        <tr>
+                            <td>Padre <br>
+                                <input type="text" name="txtNomp" id="txtNomp" />
+                            </td>
+                            <td>
+                                <input type="checkbox" name="chkVP" id="chkVP" />
+                            </td>
+                            <td>
+                                <input type="checkbox" name="chkFp" id="chkFp" />
+                            </td>
+                            <td colspan="2">
+                                <input type="text" name="txtDomp" id="txtDomp" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtOcup" id="txtOcup" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Madre <br>
+                                <input type="text" name="txtNomm" id="txtNomm" />
+                            </td>
+                            <td>
+                                <input type="checkbox" name="chkVm" id="chkVm" />
+                            </td>
+                            <td>
+                                <input type="checkbox" name="chkFm" id="chkFm" />
+                            </td>
+                            <td colspan="2">
+                                <input type="text" name="txtDomm" id="txtDomm" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtOcum" id="txtOcum" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Esposa(o) <br>
+                                <input type="text" name="txtNome" id="txtNome" />
+                            </td>
+                            <td>
+                                <input type="checkbox" name="chkVe" id="chkVe" />
+                            </td>
+                            <td>
+                                <input type="checkbox" name="chkFe" id="chkFe" />
+                            </td>
+                            <td colspan="2">
+                                <input type="text" name="txtDome" id="txtDome" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtOcue" id="txtOcue" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">Nombre y edades de los hijos:
+                                <input type="text" name="txtHijos" id="txtHijos" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="6" bgcolor="lightgreen">Escolaridad</td>
+                        </tr>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Direccion</td>
+                            <td>Fecha de inicio</td>
+                            <td>Fecha de termino</td>
+                            <td>Años</td>
+                            <td>Título recibido</td>
+                        </tr>
+                        <tr>
+                            <td>Primaria <br>
+                                <input type="text" name="txtNomPri" id="txtNomPri" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtDirPri" id="txtDirPri" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtDePri" id="txtDePri" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtAPri" id="txtAPri" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtAñosPri" id="txtAñosPri" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtTitPri" id="txtTitPri" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Secundaria o prevocacional <br>
+                                <input type="text" name="txtNomSec" id="txtNomSec" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtDirSec" id="txtDirSec" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtDeSec" id="txtDeSec" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtASec" id="txtASec" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtAñosSec" id="txtAñosSec" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtTitSec" id="txtTitSec" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Preparatoria o vocacional<br>
+                                <input type="text" name="txtNomPre" id="txtNomPre" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtDirPre" id="txtDirPre" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtDePre" id="txtDePre" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtAPre" id="txtAPre" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtAñosPre" id="txtAñosPre" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtTitPre" id="txtTitPre" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Profesional <br>
+                                <input type="text" name="txtNomPro" id="txtNomPro" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtDirPro" id="txtDirPro" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtDePro" id="txtDePro" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtAPro" id="txtAPro" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtAñosPro" id="txtAñosPro" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtTitPro" id="txtTitPro" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Comercial u otras <br>
+                                <input type="text" name="txtNomCom" id="txtNomCom" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtDirCom" id="txtDirCom" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtDeCom" id="txtDeCom" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtACom" id="txtACom" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtAñosCom" id="txtAñosCom" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtTitCom" id="txtTitCom" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">Estudios que esta efectuando en la actualidad <br>
+                                Escuela:<input type="text" name="txtEscuelaO" id="txtEscuelaO" />
+                                Horario:<input type="text" name="txtHorario" id="txtHorario" />
+                                Curso o Carrera:<input type="text" name="txtCurCar" id="txtCurCar" />
+                                Grado:<input type="text" name="txtGrado" id="txtGrado" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="6" bgcolor="yellow">Conocimiento Generales</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Que idioma habla (50%, 75%, 100%)<br>
+                                <input type="text" name="txtIdioma" id="txtIdioma" />
+                            </td>
+                            <td colspan="3">Funciones de oficina que domina<br>
+                                <input type="text" name="txtFuncion" id="txtFuncion" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Maquina de oficina o tallerque sepa manejar<br>
+                                <input type="text" name="txtMaquina" id="txtMaquina" />
+                            </td>
+                            <td colspan="3">Software que conoce<br>
+                                <input type="text" name="txtSoftware" id="txtSoftware" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">Otros trabajos o funciones que domina <br>
+                                <input type="text" name="txtOtroF" id="txtOtroF" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="6" bgcolor="blue">Empleo actual y anteriores</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Concepto</td>
+                            <td>Actual o ultimo</td>
+                            <td>Anterior</td>
+                            <td>Anterior</td>
+                            <td>Anterior</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Tiempo que presto sus servicios</td>
+                            <td>De A<br>
+                                <input type="text" name="txtInicio" id="txtInicio" placeholder="Inicio" />
+                                <input type="text" name="txtFin" id="txtFin" placeholder="Fin" />
+                            </td>
+                            <td>De A<br>
+                                <input type="text" name="txtInicioU" id="txtInicioU" placeholder="Inicio" />
+                                <input type="text" name="txtFinU" id="txtFinU" placeholder="Fin" />
+                            </td>
+                            <td>De A<br>
+                                <input type="text" name="txtInicioD" id="txtInicioD" placeholder="Inicio" />
+                                <input type="text" name="txtFinD" id="txtFinD" placeholder="Fin" />
+                            </td>
+                            <td>De A<br>
+                                <input type="text" name="txtInicioT" id="txtInicioT" placeholder="Inicio" />
+                                <input type="text" name="txtFinT" id="txtFinT" placeholder="Fin" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Nombre de la compañia</td>
+                            <td>
+                                <input type="text" name="txtNom" id="txtNom" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtNomU" id="txtNomU" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtNomD" id="txtNomD" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtNomT" id="txtNomT" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Dirección</td>
+                            <td>
+                                <input type="text" name="txtDirC" id="txtDirC" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtDirCU" id="txtDirCU" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtDirCD" id="txtDirCD" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtDirCT" id="txtDirCT" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Telefono</td>
+                            <td>
+                                <input type="text" name="txtTelC" id="txtTelC" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtTelCU" id="txtTelCU" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtTelCD" id="txtTelCD" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtTelCT" id="txtTelCT" />
+                            </td>
+                        <tr>
+                            <td colspan="2">Puesto desempeñado</td>
+                            <td>
+                                <input type="text" name="txtPuesto" id="txtPuesto" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtPuestoU" id="txtPuestoU" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtPuestoD" id="txtPuestoD" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtPuestoT" id="txtPuestoT" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Sueldo mensual</td>
+                            <td>Inicial y final<br>
+                                <input type="text" name="txtInicioS" id="txtInicioS" placeholder="Sueldo Inicial" />
+                                <input type="text" name="txtFinS" id="txtFinS" placeholder="Sueldo final" />
+                            </td>
+                            <td>Inicial y final<br>
+                                <input type="text" name="txtInicioSU" id="txtInicioSU" placeholder="Sueldo Inicial" />
+                                <input type="text" name="txtFinSU" id="txtFinSU" placeholder="Sueldo Final" />
+                            </td>
+                            <td>Inicial y final<br>
+                                <input type="text" name="txtInicioSD" id="txtInicioSD" placeholder="Sueldo Inicial" />
+                                <input type="text" name="txtFinSD" id="txtFinSD" placeholder="Sueldo Final" />
+                            </td>
+                            <td>Inicial y final<br>
+                                <input type="text" name="txtInicioST" id="txtInicioST" placeholder="Sueldo Inicial" />
+                                <input type="text" name="txtFinST" id="txtFinST" placeholder="Sueldo final" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Motivo de separacion</td>
+                            <td>
+                                <input type="text" name="txtSeparacion" id="txtSeparacion" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtSeparacionU" id="txtSeparacionU" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtSeparacionD" id="txtSeparacionD" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtSeparacionT" id="txtSeparacionT" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Nombre de su jefe directo</td>
+                            <td>
+                                <input type="text" name="txtJefe" id="txtJefe" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtJefeU" id="txtJefeU" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtJefeD" id="txtJefeD" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtJefeT" id="txtJefeT" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Puesto de su jefe directo</td>
+                            <td>
+                                <input type="text" name="txtJefeP" id="txtJefeP" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtJefePU" id="txtJefePU" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtJefePD" id="txtJefePD" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtJefePT" id="txtJefePT" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Podemos solicitar informacion de usted: <br>
+                                Si<input type="checkbox" name="chkSiC" id="chkSIC" />
+                                No<input type="checkbox" name="chkNoC" id="chkNoC" />
+                                Razones<input type="text" name="txtRazon" id="Razon" />
+                            </td>
+                            <td colspan="4">Comentarios de sus jefes:<br>
+                                <textarea name="txtComen" id="txtComen"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="6" bgcolor="lightblue">Referencias personales</td>
+                        </tr>
+                        <tr>
+                            <td>Nombre</td>
+                            <td colspan="2">Domicilio</td>
+                            <td>Telefono</td>
+                            <td>Ocupación</td>
+                            <td>Tiempo de conocerlo</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="txtNombreCom" id="txtNombreCom" />
+                            </td>
+                            <td colspan="2">
+                                <input type="text" name="txtDomCom" id="txtDomCom" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtTelCom" id="txtTelCom" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtOcuCom" id="txtOcuCom" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtTiempoCom" id="txtTiempoCom" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="txtNombreComU" id="txtNombreComU" />
+                            </td>
+                            <td colspan="2">
+                                <input type="text" name="txtDomComU" id="txtDomComU" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtTelComU" id="txtTelComU" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtOcuComU" id="txtOcuComU" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtTiempoComU" id="txtTiempoComU" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="txtNombreComT" id="txtNombreComT" />
+                            </td>
+                            <td colspan="2">
+                                <input type="text" name="txtDomComT" id="txtDomComT" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtTelComT" id="txtTelComT" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtOcuComT" id="txtOcuComT" />
+                            </td>
+                            <td>
+                                <input type="text" name="txtTiempoComT" id="txtTiempoComT" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="3">Datos Generales</td>
+                            <td align="center" colspan="3">Datos Economicos</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">¿Como supo de este empleo?<br>
+                                <input type="checkbox" name="ckbAnuncio" id="ckbAnuncio" />
+                                <label for="ckbAnuncio">Anuncio</label>
+                                <input type="checkbox" name="ckbOmedio" id="ckbOmedio" />
+                                <label for="ckbOMedio">Otro medio (Anotelo)</label>
+                                <input type="text" name="txtOtromedio" id="txtOtromedio" />
+                            </td>
+                            <td colspan="2">¿Tiene usted otros ingresos?<br>
+                                <input type="checkbox" name="ckbNoI" id="ckbNoI" />
+                                <label for="ckbNoI">No</label>
+                                <input type="checkbox" name="ckbSiI" id="ckbSiI" />
+                                <label for="ckbSiI">Si (Describalos)</label>
+                                <input type="text" name="txtIotro" id="txtIotro" />
+                            </td>
+                            <td>Importe mensual:<br>
+                                $<input type="text" name="txtImporte" id="txtImporte" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">¿Tienes parientes trabajando en esta empresa?<br>
+                                <input type="checkbox" name="ckbNoEm" id="ckbNoEm" />
+                                <label for="ckbNoEm">No</label>
+                                <input type="checkbox" name="ckbSiEm" id="ckbSiEm" />
+                                <label for="ckbSiEm">Si (Nombrelos)</label>
+                                <input type="text" name="txtParientes" id="txtParientes" />
+                            </td>
+                            <td colspan="2">¿Su conyuge trabaja?<br>
+                                <input type="checkbox" name="ckbNoC" id="ckbNoC" />
+                                <label for="ckbNoC">No</label>
+                                <input type="checkbox" name="ckbSiC" id="ckbSiC" />
+                                <label for="ckbSiC">Si (¿Donde?)</label>
+                                <input type="text" name="txtDonde" id="txtDonde" />
+                            </td>
+                            <td>Percepcion mensual:<br>
+                                $<input type="text" name="txtPercepcion" id="txtPercepcion" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">¿Ha estado afianzado?<br>
+                                <input type="checkbox" name="ckbNoAF" id="ckbNoAF" />
+                                <label for="ckbNoAF">No</label>
+                                <input type="checkbox" name="ckbSiAF" id="ckbSiAF" />
+                                <label for="ckbSiAF">Si (Nombre de la Cia.)</label>
+                                <input type="text" name="txtCia" id="txtCia" />
+                            </td>
+                            <td colspan="2">¿Vive en casa propia?<br>
+                                <input type="checkbox" name="ckbNoCasa" id="ckbNoCasa" />
+                                <label for="ckbNoCasa">No</label>
+                                <input type="checkbox" name="ckbSiCasa" id="ckbSiCasa" />
+                                <label for="ckbSiCasa">Si </label>
+                            </td>
+                            <td>Valor aproximado:<br>
+                                $<input type="text" name="txtValoraprox" id="txtValoraprox" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">¿Ha estado afiliado a algún sindicato?<br>
+                                <input type="checkbox" name="ckbNoSin" id="ckbNoSin" />
+                                <label for="ckbNoSin">No</label>
+                                <input type="checkbox" name="ckbSiSin" id="ckbSiSin" />
+                                <label for="ckbSiSin">Si (¿A cual?)</label>
+                                <input type="text" name="txtSindicato" id="txtSindicato" />
+                            </td>
+                            <td colspan="2">¿Paga renta?<br>
+                                <input type="checkbox" name="ckbNoRenta" id="ckbNoRenta" />
+                                <label for="ckbNoRenta">No</label>
+                                <input type="checkbox" name="ckbSiRenta" id="ckbSiRenta" />
+                                <label for="ckbSiRenta">Si</label>
+                            </td>
+                            <td>Renta mensual:<br>
+                                $<input type="text" name="txtRenta" id="txtRenta" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">¿Tiene seguro de vida?<br>
+                                <input type="checkbox" name="ckbNoSeguro" id="ckbNoSeguro" />
+                                <label for="ckbNoSeguro">No</label>
+                                <input type="checkbox" name="ckbSiSeguro" id="ckbSiSeguro" />
+                                <label for="ckbSiSeguro">Si (Nombre de la Cia)</label>
+                                <input type="text" name="txtSeguro" id="txtSeguro" />
+                            </td>
+                            <td colspan="3">¿Tiene automóvil propio?<br>
+                                <input type="checkbox" name="ckbNoCarro" id="ckbNoCarro" />
+                                <label for="ckbNoCarro">No</label>
+                                <input type="checkbox" name="ckbSiCarro" id="ckbSiCarro" />
+                                <label for="ckbSiCarro">Si </label>
+                                Marca<input type="text" name="txtMarca" id="txtMarca" />
+                                Modelo<input type="text" name="txtModelo" id="txtModelo" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">¿Puede viajar?<br>
+                                <input type="checkbox" name="ckbNoViaje" id="ckbNoViaje" />
+                                <label for="ckbNoViaje">No</label>
+                                <input type="checkbox" name="ckbSiViaje" id="ckbSiViaje" />
+                                <label for="ckbSiSin">Si (¿Razones?)</label>
+                                <input type="text" name="txtViajes" id="txtViajes" />
+                            </td>
+                            <td colspan="2">¿Tiene deudas?<br>
+                                <input type="checkbox" name="ckbNoDeuda" id="ckbNoDeuda" />
+                                <label for="ckbNoDeuda">No</label>
+                                <input type="checkbox" name="ckbSiDeuda" id="ckbSiDeuda" />
+                                <label for="ckbSiDeuda">Si (¿Con quién?)</label>
+                                <input type="text" name="txtDeuda" id="txtDeuda" />
+                            </td>
+                            <td>Importe:<br>
+                                $<input type="text" name="txtDeudaI" id="txtDeudaI" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">¿Esta dispuesto a cambiar de lugar de residencia?<br>
+                                <input type="checkbox" name="ckbNoResidencia" id="ckbNoResidencia" />
+                                <label for="ckbNoResidencia">No</label>
+                                <input type="checkbox" name="ckbSiResidencia" id="ckbSiResidencia" />
+                                <label for="ckbSiResidencia">Si (Razones)</label>
+                                <input type="text" name="txtResidencia" id="txtResidencia" />
+                            </td>
+                            <td colspan="3">¿Cuanto abona mensualmente?<br>
+                                $<input type="text" name="txtAbono" id="txtAbono" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Fecha en la que podría presentarse a trabajar:
+                                <input type="text" name="txtTrabajofecha" id="txtTrabajofecha" />
+                            </td>
+                            <td colspan="3">¿A cuanto ascienden sus gastos mensuales?
+                                <input type="text" name="txtGastosM" id="txtGastosM" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="4">Comentarios del etrevistador</td>
+                            <td colspan="2">Hago constar que mis respuestas son verdaderas</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <textarea name="txtaCom1" id="txtaCom1"></textarea>
+                            </td>
+                            <td colspan="2" rowspan="2">Firma del solicitante:</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <textarea name="txtaCom2" id="txtaCom2"></textarea></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+</body>
+</html>
